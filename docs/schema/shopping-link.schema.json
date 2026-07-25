@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ethanreg004.github.io/shopping-spreadsheet-toolkit/schema/shopping-link.schema.json",
+  "title": "Shopping spreadsheet link record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "category", "url", "status", "last_checked"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "category": { "type": "string", "minLength": 1 },
+    "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+    "status": {
+      "type": "string",
+      "enum": ["active", "review", "broken", "archived"]
+    },
+    "last_checked": { "type": "string", "format": "date" }
+  }
+}
