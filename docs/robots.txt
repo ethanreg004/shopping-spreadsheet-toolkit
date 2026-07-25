@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ethanreg004.github.io/shopping-spreadsheet-toolkit/sitemap.xml

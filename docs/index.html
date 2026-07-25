@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Spreadsheet Quality Checklist | Data Fields & Link Audits</title>
+  <meta name="description" content="A practical, dependency-free toolkit for checking shopping spreadsheet fields, duplicate URLs, status values, and review dates.">
+  <link rel="canonical" href="https://ethanreg004.github.io/shopping-spreadsheet-toolkit/">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <a class="brand" href="./">Spreadsheet Toolkit</a>
+      <a href="https://github.com/ethanreg004/shopping-spreadsheet-toolkit">View source</a>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <header class="hero">
+        <p class="eyebrow">Open data hygiene resource</p>
+        <h1>Shopping Spreadsheet Quality Checklist</h1>
+        <p class="lead">Review required fields, duplicate URLs, record status, and stale check dates before a community shopping spreadsheet is shared publicly.</p>
+        <a class="primary-action" href="https://github.com/ethanreg004/shopping-spreadsheet-toolkit">Open the toolkit on GitHub</a>
+      </header>
+
+      <section aria-labelledby="checks">
+        <h2 id="checks">What the toolkit checks</h2>
+        <div class="grid">
+          <div><h3>Structure</h3><p>Confirm the expected columns exist and required values are not blank.</p></div>
+          <div><h3>URLs</h3><p>Flag malformed HTTP or HTTPS destinations and duplicate normalized links.</p></div>
+          <div><h3>Status</h3><p>Keep review states limited to a small documented vocabulary.</p></div>
+          <div><h3>Freshness</h3><p>Warn when a record has not received a real manual check within the chosen interval.</p></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="workflow">
+        <h2 id="workflow">A simple review workflow</h2>
+        <ol>
+          <li>Export the spreadsheet with the documented column names.</li>
+          <li>Run the local audit and fix structural errors.</li>
+          <li>Open destinations manually and confirm their final domain and page purpose.</li>
+          <li>Update status and review dates only after the checks are complete.</li>
+        </ol>
+      </section>
+
+      <aside aria-labelledby="limits">
+        <h2 id="limits">Important limits</h2>
+        <p>The tool does not verify authenticity, seller reliability, price, stock, QC photos, warehouse handling, or shipping outcomes. Those details can change and must be checked on the destination platform.</p>
+      </aside>
+
+      <section aria-labelledby="example">
+        <h2 id="example">Related public example</h2>
+        <p>To see how a public guide can organize category notes and user-facing checks, browse the <a href="https://lovego.org/" rel="nofollow sponsored">LoveGoBuy Spreadsheet web guide</a>. Treat its product and logistics details as information to recheck, not as guarantees.</p>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p>Open-source data hygiene notes for community-maintained shopping spreadsheets.</p>
+  </footer>
+</body>
+</html>
